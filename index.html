@@ -6,5 +6,60 @@
     <link rel="stylesheet" href="style.css" />
     <title>Sign Up Form!</title>
   </head>
-  <body></body>
+  <body>
+    <div class="banner-section">
+      <div class="logo">
+        <img src="odin-lined.png" alt="The Odin Project" />
+        <h1>ODIN</h1>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="passage right-section-padding">
+        <h3>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </h3>
+        <h3>You know you want to.</h3>
+      </div>
+      <div class="form-main-container right-section-padding">
+        <h2>Let's do this!</h2>
+        <form id="odin-sign-up" action="">
+          <div class="form-left">
+            <label for="first-name"
+              >FIRST NAME
+              <input type="text" id="first-name" name="userFirstName"
+            /></label>
+            <label for="email"
+              >EMAIL <input type="email" id="email" name="userEmail"
+            /></label>
+            <label for="password"
+              >PASSWORD <input type="password" id="password" name="userPswd"
+            /></label>
+          </div>
+          <div class="form-right">
+            <label for="last-name"
+              >LAST NAME <input type="text" id="last-name" name="userLastName"
+            /></label>
+            <label for="phone-number"
+              >PHONE NUMBER
+              <input type="tel" id="phone-number" name="userPhone"
+            /></label>
+            <label for="password-confirm"
+              >CONFIRM PASSWORD
+              <input
+                type="password"
+                id="password-confirm"
+                name="userPswdConfirm"
+            /></label>
+          </div>
+        </form>
+      </div>
+
+      <div class="bottom-section right-section-padding">
+        <button form="odin-sign-up">Create Account</button>
+        <p>Already have an account? <span class="link">Log in</span></p>
+      </div>
+    </div>
+  </body>
 </html>
