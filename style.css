@@ -7,15 +7,44 @@
   margin: 0;
 }
 
+body {
+  --color-green: #596D48;
+  --color-white: #E5E7EB;
+  --side-banner-img: url('clement-souchet-juVccM81b_E-unsplash.jpg');
+
+  display: flex;
+  background-color: gray;
+  min-height: 100vh;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 h2,h3,label,p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.banner-section{
+  background-image: var(--side-banner-img);
+  background-size: cover;
+}
 
-body {
-  background-color: gray;
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem 7rem;
+  margin: 15rem 0rem;
+
+  background-color: rgba(0,0,0, 0.35);
+}
+
+.logo img {
+  width: 6rem;
+}
+
+.logo h1 {
+  font-size: 5rem;
+  color: var(--color-white);
 }
