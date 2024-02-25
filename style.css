@@ -9,7 +9,8 @@
 
 body {
   --color-green: #596D48;
-  --color-white: #E5E7EB;
+  --color-focus: #E5E7EB;
+  --color-text-white: aliceblue;
   --side-banner-img: url('clement-souchet-juVccM81b_E-unsplash.jpg');
 
   display: flex;
@@ -46,5 +47,93 @@ h2,h3,label,p {
 
 .logo h1 {
   font-size: 5rem;
-  color: var(--color-white);
+  color: var(--color-text-white);
+}
+
+
+.right-section {
+  background-color: rgb(247, 251, 255);
+  width: calc(100vw - 14rem);
+}
+
+.right-section-padding{
+  padding: 0 3rem;
+}
+
+.right-section h3{
+  width: 45rem;
+  margin-bottom: 1.5rem;
+
+  font-weight: 500;
+}
+
+.right-section .passage {
+  margin: 6rem 0 2rem 0;
+}
+
+.right-section .form-main-container {
+  background-color: white;
+  box-shadow: 0px 5px 8px rgb(196, 196, 196);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+#odin-sign-up {
+  display: flex;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-main-container h2{
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+.form-main-container label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 8rem 1.5rem 0;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(80, 80, 80);
+}
+
+.form-main-container input[type='text'],
+.form-main-container input[type='email'],
+.form-main-container input[type='tel'],
+.form-main-container input[type='password']{
+  border: 1px solid rgb(200,200,200);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 18px;
+}
+
+.bottom-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bottom-section button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px lightgray;
+  background-color: var(--color-green);
+  color: var(--color-text-white);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding: 10px 40px;
+}
+
+.bottom-section p {
+  font-size: 12px;
+}
+
+.bottom-section p span {
+  font-weight: 700;
+  color: var(--color-green);
 }
